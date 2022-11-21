@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RandomQuotesServiceCall" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bvi-HP-KYi">
+                                <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="UGl-4W-KtM">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1653.3333333333333"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhy-j4-8J4">
+                                                <rect key="frame" x="90" y="0.0" width="213" height="74"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="gXX-SH-SZ9"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Get Random Query" cornerStyle="large">
+                                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="25"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="getRandomQueryButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="juQ-Fe-3EW"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAM-xl-cIS">
+                                                <rect key="frame" x="40" y="91" width="313" height="1562.3333333333333"/>
+                                                <mutableString key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a dictum tellus. Maecenas hendrerit neque ligula, sit amet fermentum lectus tempor sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at massa in nunc porta egestas. Nulla sollicitudin, augue et semper tempor, magna elit luctus tortor, eu ornare velit nibh ut velit. Etiam ornare dignissim nisl, vitae laoreet orci fermentum ut. Vestibulum faucibus dictum vestibulum. Maecenas consectetur auctor erat at tempor. Etiam ut varius diam. Nulla quis nibh erat. Vestibulum congue justo non mi dapibus rutrum. Pellentesque iaculis a augue et rutrum. Nulla quis elit et eros laoreet volutpat nec eu turpis. Morbi pharetra non metus id auctor.
+
+Nulla aliquam libero sed nisl imperdiet aliquet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer non pellentesque risus, sed semper sem. Phasellus felis felis, vehicula id eros eu, lobortis posuere leo. Maecenas vitae faucibus massa. Mauris nulla est, sollicitudin et mattis suscipit, aliquam ut velit. Sed vitae nulla sit amet lorem euismod lacinia.
+
+Nulla at pulvinar eros. Praesent finibus sed leo eget cursus. Nulla suscipit feugiat ipsum non viverra. Phasellus at nunc arcu. Etiam id massa suscipit, interdum mi vitae, bibendum quam. Curabitur consequat tristique scelerisque. Sed pellentesque aliquam venenatis. Donec pellentesque bibendum eros nec volutpat. Cras vel hendrerit diam. Curabitur in scelerisque velit. Fusce et est at mauris tincidunt sagittis. Fusce fringilla vel ligula eu hendrerit.
+
+Maecenas interdum ligula id semper ullamcorper. Maecenas commodo nisi vel purus interdum viverra. Suspendisse arcu lacus, pharetra quis nibh eget, gravida scelerisque enim. Sed ante sapien, consequat vitae urna non, rhoncus lacinia nulla. Quisque eget metus vel tortor accumsan interdum et et ligula. Morbi ultricies purus a metus lacinia vulputate. Curabitur quis mauris sed velit tincidunt feugiat et quis lorem.
+
+Nunc varius placerat elementum. Curabitur id accumsan metus. Maecenas metus mi, tempus et sollicitudin in, pharetra a dolor. Duis tempus nisi non libero lacinia, vel fringilla est tempus. In eu lacus posuere, convallis mauris sit amet, tristique ipsum. Donec luctus consequat leo et fermentum. Sed in velit quis felis interdum iaculis. Vivamus hendrerit sollicitudin magna nec posuere. Sed scelerisque aliquam ex interdum condimentum. Sed egestas velit at ante volutpat euismod. Curabitur dui massa, eleifend id nisl vitae, ullamcorper aliquet nisi. Morbi placerat efficitur porttitor. Integer sit amet maximus justo. In pulvinar lacus vitae ornare elementum. Vestibulum ut massa neque. Cras varius accumsan efficitur.</mutableString>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="pAM-xl-cIS" secondAttribute="trailing" constant="40" id="Sdm-9a-a1l"/>
+                                            <constraint firstItem="pAM-xl-cIS" firstAttribute="leading" secondItem="UGl-4W-KtM" secondAttribute="leading" constant="40" id="eBE-Na-hJi"/>
+                                            <constraint firstItem="zhy-j4-8J4" firstAttribute="leading" secondItem="UGl-4W-KtM" secondAttribute="leading" constant="90" id="h9l-HT-B5f"/>
+                                            <constraint firstAttribute="trailing" secondItem="zhy-j4-8J4" secondAttribute="trailing" constant="90" id="tYz-DA-WDh"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="UGl-4W-KtM" firstAttribute="top" secondItem="bvi-HP-KYi" secondAttribute="top" id="6R3-Nu-Ryg"/>
+                                    <constraint firstAttribute="bottom" secondItem="UGl-4W-KtM" secondAttribute="bottom" id="OjR-6N-MEw"/>
+                                    <constraint firstItem="UGl-4W-KtM" firstAttribute="width" secondItem="bvi-HP-KYi" secondAttribute="width" id="ZtJ-5m-ype"/>
+                                    <constraint firstItem="UGl-4W-KtM" firstAttribute="leading" secondItem="bvi-HP-KYi" secondAttribute="leading" id="gQF-j2-8bz"/>
+                                    <constraint firstAttribute="trailing" secondItem="UGl-4W-KtM" secondAttribute="trailing" id="oI0-R6-ovw"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bvi-HP-KYi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="A6d-wF-wr3"/>
+                            <constraint firstAttribute="bottom" secondItem="bvi-HP-KYi" secondAttribute="bottom" id="Nr4-J4-bdc"/>
+                            <constraint firstItem="bvi-HP-KYi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bGo-hD-dHG"/>
+                            <constraint firstItem="bvi-HP-KYi" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="mfC-zq-pcm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="queryLabel" destination="pAM-xl-cIS" id="2P0-29-YCQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="183.96946564885496" y="13.380281690140846"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
